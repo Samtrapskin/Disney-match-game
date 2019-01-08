@@ -17,13 +17,15 @@ function flipCard() {
          return;
   }
   secondCard = this;
-
+ 
 
   checkForMatch();
 }
+
+
   function checkForMatch() {
     let isMatch = firstCard.dataset.charecter === secondCard.dataset.charecter;
-  isMatch? disableCards() : unflipCards();
+  isMatch ? disableCards() : unflipCards();
   }
   
 
@@ -31,11 +33,11 @@ function flipCard() {
     firstCard.removeEventListener('click', flipCard)
     secondCard.removeEventListener('click', flipCard)
 
-     resetBoard();
+      resetBoard();
   }
-
+  
   function unflipCards() {
-    lockBoard = true;
+
 
     setTimeout(() => {
       firstCard.classList.remove('flip');
