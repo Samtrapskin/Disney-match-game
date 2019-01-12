@@ -9,8 +9,19 @@
 body {
     height: 100vh;
     display: flex;
-    background-image: url('img/disney-background.jpg')  }
-  
+    background-image: url('img/disney-background.jpg')
+    }
+  .new-game-button {
+    position: fixed;
+    left: 193px;
+    bottom: 146px;
+  }
+
+  button {
+    width: 103px;
+    height:30px;
+    border-radius: 6%;
+  }
   .memory-game {
     width: 1006px;
     height: 740px;
