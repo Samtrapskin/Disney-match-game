@@ -83,7 +83,52 @@ function flipCard() {
       
       
     }
-    
+  
+    $("#js-button1").click(function(){
+          $(this).toggleClass("select");
+          $('#js-button2').removeClass("select");
+          $('#js-button3').removeClass("select");
+  });
+
+  $("#js-button2").click(function(){
+    $(this).toggleClass("select");
+    $('#js-button1').removeClass("select");
+    $('#js-button3').removeClass("select");
+  
+});
+
+$("#js-button3").click(function(){
+  $(this).toggleClass("select");
+  $('#js-button1').removeClass("select");
+  $('#js-button2').removeClass("select");
+
+});
+
+
+
+// $(".select-buttons li").on('click','li', function(){
+//   $(this).toggleClass('select').siblings().removeClass('select');
+// })
+
+// 13
+
+
+// <div class="size">
+//    <a href="">blahblah</a>
+//    <a href="">blahblah</a>
+// </div>
+
+
+//   $("#js-button2").click(function(){
+//     $(this).toggleClass("selector-button");
+// });
+
+// $("#js-button1").click(function(){
+//   $(this).toggleClass("selector-button");
+// });
+
+
+  
 
 
 cards.forEach(card => card.addEventListener('click', flipCard));
