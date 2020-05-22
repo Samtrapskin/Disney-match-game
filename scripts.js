@@ -37,7 +37,7 @@ function flipCard() {
  
   }
   
-
+//logic after match//
   function disableCards() {
     firstCard.removeEventListener('click', flipCard)
     secondCard.removeEventListener('click', flipCard)
@@ -53,22 +53,20 @@ function flipCard() {
    
 
   }
-  
+  //logic if not a match
   function unflipCards() {
-
 
     setTimeout(() => {
       firstCard.classList.remove('flip');
       secondCard.classList.remove('flip');
       
        resetBoard();
-    }, 1000);
+    }, 800);
   }
 
    function resetBoard() {
        [hasFlippedCard, lockBoard] = [false, false];
        [firstCard, secondCard] = [null, null];
-      //  [isButtonClicked, hasFlippedCard]= [true, true];
      }
 
      (function shuffle() {

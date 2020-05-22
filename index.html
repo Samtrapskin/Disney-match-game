@@ -1,109 +1,126 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-  <title> Disney Memory Game</title>
+    <title> Disney Memory Game</title>
 
-  <link rel="stylesheet" href="style.css">
- 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
 </head>
+
 <body>
-    
-<div class="new-game-button">
-    <button type="submit" onclick="buttonClicked()">New Game</button>
-</div>
 
-<section class="memory-game">
-    
-    <!-- Card section -->
+    <div class="new-game-button">
+        <button type="submit" onclick="buttonClicked()">New Game</button>
+    </div>
 
+    <section class="memory-game">
 
+        <!-- Card section -->
 
-<!-- end card section -->
+        <div class="container card-field">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="memory-card" data-charecter="hops">
+                     <div class="card-container">
+                        <img class="front-face" src="img/nuuu.jpg">
+                        <img class="back-face" src="img/logo-Walt-Disney.jpg">
+                     </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="memory-card" data-charecter="tiana">
+                        <img class="front-face" src="img/tiana.jpeg">
+                        <img class="back-face" src="img/logo-Walt-Disney.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="memory-card" data-charecter="goofy">
+                        <img class="front-face" src="img/goofy.jpeg">
+                        <img class="back-face" src="img/logo-Walt-Disney.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="memory-card" data-charecter="rupunzle">
+                        <img class="front-face" src="img/rupunzle.jpg">
+                        <img class="back-face" src="img/logo-Walt-Disney.jpg">
+                    </div>
+                </div>
 
-<div class="memory-card" data-charecter="hops">
-    <img class="front-face" src="img/hops.jpg">
-    <img class="back-face" src="img/logo-Walt-Disney.jpg">
-
-
-</div>
-
-<div class="memory-card" data-charecter="tiana">
-    <img class="front-face" src="img/tiana.jpeg">
-    <img class="back-face" src="img/logo-Walt-Disney.jpg">
-
-
-</div>
-<div class="memory-card" data-charecter="goofy">
-    <img class="front-face" src="img/goofy.jpeg">
-    <img class="back-face" src="img/logo-Walt-Disney.jpg">
-
-
-</div>
-<div class="memory-card" data-charecter="rupunzle">
-    <img class="front-face" src="img/rupunzle.jpg">
-    <img class="back-face" src="img/logo-Walt-Disney.jpg">
-
-
-</div>
-<div class="memory-card" data-charecter="goofy">
-    <img class="front-face" src="img/goofy.jpeg">
-    <img class="back-face" src="img/logo-Walt-Disney.jpg">
+            </div> <!-- End row -->
 
 
-</div>
-<div class="memory-card" data-charecter="chip">
-    <img class="front-face" src="img/chip.jpeg">
-    <img class="back-face" src="img/logo-Walt-Disney.jpg">
+            <!-- Card section -->
+
+            <div class="container card-field">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="memory-card" data-charecter="goofy">
+                            <img class="front-face" src="img/goofy.jpeg">
+                            <img class="back-face" src="img/logo-Walt-Disney.jpg">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="memory-card" data-charecter="chip">
+                            <img class="front-face" src="img/chip.jpeg">
+                            <img class="back-face" src="img/logo-Walt-Disney.jpg">
+                        </div>
+                    </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="memory-card" data-charecter="pinoch">
+                                <img class="front-face" src="img/pinoch.jpeg">
+                                <img class="back-face" src="img/logo-Walt-Disney.jpg">
+                            </div>
+                        </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="memory-card" data-charecter="rupunzle">
+                                    <img class="front-face" src="img/rupunzle.jpg">
+                                    <img class="back-face" src="img/logo-Walt-Disney.jpg">
+                                </div>
+                            </div>
+                </div>
+            </div>
+                <!-- </div>
+                <div class="memory-card" data-charecter="pinoch">
+                    <img class="front-face" src="img/pinoch.jpeg">
+                    <img class="back-face" src="img/logo-Walt-Disney.jpg">
 
 
-</div><div class="memory-card" data-charecter="pinoch">
-    <img class="front-face" src="img/pinoch.jpeg">
-    <img class="back-face" src="img/logo-Walt-Disney.jpg">
+                </div>
+            </div>
+            <div class="memory-card" data-charecter="hops">
+                <img class="front-face" src="img/hops.jpg">
+                <img class="back-face" src="img/logo-Walt-Disney.jpg">
 
 
-</div>
-</div><div class="memory-card" data-charecter="rupunzle">
-    <img class="front-face" src="img/rupunzle.jpg">
-    <img class="back-face" src="img/logo-Walt-Disney.jpg">
-
-
-</div>
-</div><div class="memory-card" data-charecter="pinoch">
-    <img class="front-face" src="img/pinoch.jpeg">
-    <img class="back-face" src="img/logo-Walt-Disney.jpg">
-
-
-</div>
-</div><div class="memory-card" data-charecter="hops">
-    <img class="front-face" src="img/hops.jpg">
-    <img class="back-face" src="img/logo-Walt-Disney.jpg">
-
-
-</div>
-</div><div class="memory-card" data-charecter="chip">
-    <img class="front-face" src="img/chip.jpeg">
-    <img class="back-face" src="img/logo-Walt-Disney.jpg">
-
-
-</div>
-</div><div class="memory-card" data-charecter="tiana">
-    <img class="front-face" src="img/tiana.jpeg">
-    <img class="back-face" src="img/logo-Walt-Disney.jpg">
-
-
-</div>
-
-   
-
-</section>
-
-<div id= "incorrect">
-        <img src="img/incorrect.jpeg" >
-    
+            </div>
         </div>
-<script src="scripts.js"></script>
+        <div class="memory-card" data-charecter="chip">
+            <img class="front-face" src="img/chip.jpeg">
+            <img class="back-face" src="img/logo-Walt-Disney.jpg">
+
+
+        </div>
+        </div>
+        <div class="memory-card" data-charecter="tiana">
+            <img class="front-face" src="img/tiana.jpeg">
+            <img class="back-face" src="img/logo-Walt-Disney.jpg">
+        </div>
+        </div> -->
+
+
+    </section>
+
+    <div id="incorrect">
+        <img src="img/incorrect.jpeg">
+
+    </div>
+    <script src="scripts.js"></script>
 </body>
+
 </html>
